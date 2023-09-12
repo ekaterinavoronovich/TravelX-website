@@ -1,0 +1,39 @@
+.pagination__scrollbar {
+  display: grid;
+  gap: 15px;
+}
+
+.pagination__arrows {
+  display: flex;
+  // column-gap: 6px;
+  opacity: 0.3;
+  margin-right: -6px;
+  @media (max-width: 767px) {
+    flex-direction: column;
+    row-gap: 6px;
+    align-items: end;
+  }
+  @media (max-width: 412px) {
+    display: none;
+  }
+}
+
+.pagination__count {
+  font-family: var(--font-main);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: rgba(255, 255, 255, 0.3) !important;
+  text-align: right;
+}
+
+.pagination__count-current,
+.swiper-pagination-current {
+  font-size: 2rem;
+  margin-right: 6px;
+  color: rgba(255, 255, 255, 1);
+}
+.pagination__count-total {
+  margin-left: 6px;
+  font-size: 1.125rem;
+}
